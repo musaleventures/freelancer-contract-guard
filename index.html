@@ -64,6 +64,27 @@
 <div class="container">
 
   <h1>🛡️ Freelancer Contract Guard</h1>
+  <div class="card">
+  <h2>Paste Your Contract</h2>
+  <p>Paste your freelance contract text below to see a risk summary.</p>
+
+  <textarea id="contractInput" rows="10" style="width:100%; padding:10px; font-size:14px;"
+    placeholder="Paste your contract text here..."></textarea>
+
+  <br><br>
+
+  <button onclick="showReview()" style="
+    padding:12px 20px;
+    font-size:16px;
+    background:#1f3a5f;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;">
+    Review Contract
+  </button>
+</div>
+
   <p><strong>AI-assisted contract review for freelancers</strong></p>
 
   <div class="card">
@@ -133,12 +154,34 @@
     </ul>
     <p><strong>Why this matters:</strong> You retain freedom to take other work.</p>
   </div>
+<div id="result" style="display:none;">
+  <div class="card risk-high">
+    <h3>Payment <span class="tag high">High Risk</span></h3>
+    <p>The contract does not clearly define when or how you will be paid.</p>
+  </div>
+
+  <div class="card risk-high">
+    <h3>Intellectual Property <span class="tag high">High Risk</span></h3>
+    <p>The client owns all work, even if payment is incomplete.</p>
+  </div>
+
+  <div class="card risk-medium">
+    <h3>Termination <span class="tag medium">Medium Risk</span></h3>
+    <p>The contract can end suddenly without clear notice.</p>
+  </div>
+</div>
 
   <footer>
     <p>⚠️ Disclaimer: This review is for informational purposes only and does not constitute legal advice.</p>
   </footer>
 
 </div>
+<script>
+  function showReview() {
+    document.getElementById("result").style.display = "block";
+    window.scrollTo({ top: document.getElementById("result").offsetTop, behavior: "smooth" });
+  }
+</script>
 
 </body>
 </html>
