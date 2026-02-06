@@ -1,1 +1,0 @@
-# freelancer-contract-guard
