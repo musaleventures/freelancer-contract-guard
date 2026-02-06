@@ -1,36 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Freelancer Contract Guard</title>
+  <meta charset="UTF-8">
+  <title>Freelancer Contract Guard – AI Review</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial; margin: 40px; }
-    .high { color: red; }
-    .medium { color: orange; }
-    .low { color: green; }
-    .box { border: 1px solid #ddd; padding: 15px; margin-bottom: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 24px;
+    }
+    h1, h2, h3 {
+      color: #1f3a5f;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+    .risk-high {
+      border-left: 6px solid #d9534f;
+    }
+    .risk-medium {
+      border-left: 6px solid #f0ad4e;
+    }
+    .risk-low {
+      border-left: 6px solid #5cb85c;
+    }
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .high { background: #d9534f; }
+    .medium { background: #f0ad4e; }
+    .low { background: #5cb85c; }
+    ul {
+      margin-left: 18px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #555;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
 
-<h1>Freelancer Contract Review</h1>
-<p><strong>Overall Risk:</strong> <span class="high">High</span></p>
+<div class="container">
 
-<div class="box">
-  <h3>Payment</h3>
-  <p><strong>Risk:</strong> <span class="high">High</span></p>
-  <p><strong>What this means:</strong> Client can delay payment up to 60 days.</p>
-  <p><strong>Suggestion:</strong> Payment within 15 days of invoice.</p>
+  <h1>🛡️ Freelancer Contract Guard</h1>
+  <p><strong>AI-assisted contract review for freelancers</strong></p>
+
+  <div class="card">
+    <h2>Contract Overview</h2>
+    <p>This review highlights payment, IP, termination, liability, and non-compete clauses, explains risks in simple language, and suggests safer alternatives.  
+    <br><strong>This is not legal advice.</strong></p>
+  </div>
+
+  <div class="card risk-high">
+    <h3>Payment <span class="tag high">High Risk</span></h3>
+    <ul>
+      <li>Total payment is <strong>$2 USD</strong> for all services.</li>
+      <li>Invoice payment timeline is missing.</li>
+      <li>No payment method defined.</li>
+      <li>Late payment fees are mentioned but not specified.</li>
+    </ul>
+    <p><strong>Why this matters:</strong> You may work without knowing when or how you’ll get paid.</p>
+    <p><strong>Safer alternative:</strong><br>
+      “Client will pay Freelancer a total fee of $____, payable within 7 days of invoice via bank transfer / UPI / PayPal. Late payments will include a reasonable late fee.”
+    </p>
+    <p><strong>When to use:</strong> Always, especially with new or unknown clients.</p>
+  </div>
+
+  <div class="card risk-high">
+    <h3>Intellectual Property (IP) <span class="tag high">High Risk</span></h3>
+    <ul>
+      <li>Client owns all work forever.</li>
+      <li>Ownership applies even if payment is incomplete.</li>
+      <li>Portfolio use only after client makes work public.</li>
+    </ul>
+    <p><strong>Why this matters:</strong> You lose all rights even if the client doesn’t pay.</p>
+    <p><strong>Safer alternative:</strong><br>
+      “Ownership transfers only after full payment. Freelancer may reuse general skills, ideas, and non-confidential work.”
+    </p>
+    <p><strong>When to use:</strong> When payment is not upfront or work is reusable.</p>
+  </div>
+
+  <div class="card risk-medium">
+    <h3>Termination <span class="tag medium">Medium Risk</span></h3>
+    <ul>
+      <li>End date is blank.</li>
+      <li>No standard notice period for termination.</li>
+    </ul>
+    <p><strong>Why this matters:</strong> The contract can end suddenly, risking unpaid work.</p>
+    <p><strong>Safer alternative:</strong><br>
+      “Either party may terminate with 14 days’ notice. Client will pay for work completed up to termination.”
+    </p>
+  </div>
+
+  <div class="card risk-medium">
+    <h3>Liability <span class="tag medium">Medium Risk</span></h3>
+    <ul>
+      <li>No clear cap on your liability.</li>
+      <li>You guarantee non-infringement.</li>
+    </ul>
+    <p><strong>Why this matters:</strong> You could be exposed to unlimited claims.</p>
+    <p><strong>Safer alternative:</strong><br>
+      “Freelancer’s liability is limited to the amount paid under this agreement.”
+    </p>
+  </div>
+
+  <div class="card risk-low">
+    <h3>Non-Compete <span class="tag low">Low Risk</span></h3>
+    <ul>
+      <li>No non-compete clause.</li>
+      <li>You can work with other clients.</li>
+    </ul>
+    <p><strong>Why this matters:</strong> You retain freedom to take other work.</p>
+  </div>
+
+  <footer>
+    <p>⚠️ Disclaimer: This review is for informational purposes only and does not constitute legal advice.</p>
+  </footer>
+
 </div>
-
-<div class="box">
-  <h3>Intellectual Property</h3>
-  <p><strong>Risk:</strong> <span class="high">High</span></p>
-  <p><strong>What this means:</strong> Client owns all work.</p>
-  <p><strong>Suggestion:</strong> Freelancer retains pre-existing IP.</p>
-</div>
-
-<p><em>Disclaimer: This is not legal advice.</em></p>
 
 </body>
 </html>
-# freelancer-contract-guard
