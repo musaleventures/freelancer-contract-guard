@@ -69,16 +69,32 @@
   <h2>Paste Your Contract</h2>
     <p><strong>How it works:</strong><br>
 Paste your contract below. We review it manually using AI and return a clear risk summary and negotiation suggestions within 24–48 hours.</p>
-<label><strong>Your Email (to send the review):</strong></label><br>
-<input type="email" placeholder="you@email.com" style="width:100%; padding:10px; margin-bottom:12px;">
+ <form id="contractForm">
+  <label>Your Email (to send the review):</label>
+  <input type="email" required />
 
-  <p>Paste your freelance contract text below to see a risk summary.</p>
+  <label>Paste your freelance contract text below to see a risk summary.</label>
+  <textarea required></textarea>
 
-  <textarea id="contractInput" rows="10" style="width:100%; padding:10px; font-size:14px;"
-    placeholder="Paste your contract text here..."></textarea>
-    <div class="card">
-  <h2>Submit Your Contract</h2>
-</div>
+  <button type="submit" id="submitBtn">
+    Submit Your Contract
+  </button>
+</form>
+    #submitBtn {
+  background-color: #1f3a8a;
+  color: white;
+  padding: 14px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  background-color: #172554;
+}
+
+
 
     <p>
     Paste your contract above and click <strong>Submit for Review</strong>.
