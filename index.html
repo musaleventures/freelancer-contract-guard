@@ -62,37 +62,108 @@
 </head>
 <body>
 
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freelancer Contract Guard</title>
 
-  <h1>🛡️ Freelancer Contract Guard</h1>
-  <div class="card">
-  <h2>Paste Your Contract</h2>
-    <p><strong>How it works:</strong><br>
-Paste your contract below. We review it manually using AI and return a clear risk summary and negotiation suggestions within 24–48 hours.</p>
- <form id="contractForm">
-  <label>Your Email (to send the review):</label>
-  <input type="email" required />
+  <!-- ✅ CSS MUST be inside <style> -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+    }
 
-  <label>Paste your freelance contract text below to see a risk summary.</label>
-  <textarea required></textarea>
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+    }
 
-  <button type="submit" id="submitBtn">
-    Submit Your Contract
-  </button>
-</form>
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    label {
+      display: block;
+      margin-top: 16px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 160px;
+    }
+
+    /* ✅ REAL BUTTON STYLING */
     #submitBtn {
-  background-color: #1f3a8a;
-  color: white;
-  padding: 14px 24px;
-  font-size: 18px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
+      margin-top: 24px;
+      background-color: #1f3a8a;
+      color: white;
+      padding: 14px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
 
-#submitBtn:hover {
-  background-color: #172554;
-}
+    #submitBtn:hover {
+      background-color: #172554;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🛡️ Freelancer Contract Guard</h1>
+
+    <div class="card">
+      <h2>Paste Your Contract</h2>
+
+      <p>
+        <strong>How it works:</strong><br>
+        Paste your contract below. We review it manually using AI and return a clear
+        risk summary and negotiation suggestions within 24–48 hours.
+      </p>
+
+      <form id="contractForm">
+        <label>Your Email (to send the review):</label>
+        <input type="email" required placeholder="you@email.com" />
+
+        <label>Paste your freelance contract text below to see a risk summary.</label>
+        <textarea required placeholder="Paste your contract text here..."></textarea>
+
+        <!-- ✅ REAL CLICKABLE BUTTON -->
+        <button type="submit" id="submitBtn">
+          Submit Your Contract
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ✅ OPTIONAL: Submit handler -->
+  <script>
+    document.getElementById("contractForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("✅ Contract submitted successfully!");
+    });
+  </script>
+</body>
+</html>
 
 
 
