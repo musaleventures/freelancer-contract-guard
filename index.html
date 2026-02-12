@@ -1,280 +1,208 @@
-<p><em>Note: This is a preview demo. Reviews are currently performed manually.</em></p>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Freelancer Contract Guard – AI Review</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
-   <body>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #111;
+    }
+
+    /* GLOBAL PAGE WIDTH */
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .section {
+      margin-top: 60px;
+    }
+
+    h1, h2 {
+      color: #1f3a8a;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 16px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 160px;
+    }
+
+    button {
+      margin-top: 24px;
+      background-color: #1f3a8a;
+      color: white;
+      padding: 14px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #172554;
+    }
+
+    footer {
+      margin-top: 80px;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    em {
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
 
   <div class="page">
 
-    <!-- HERO / FORM SECTION -->
+    <!-- HERO / FORM -->
     <div class="section">
+      <p><em>Note: This is a preview demo. Reviews are currently performed manually.</em></p>
+
       <h1>🛡️ Freelancer Contract Guard</h1>
 
       <div class="card">
-        <!-- form content -->
+        <h2>Paste Your Contract</h2>
+
+        <p>
+          <strong>How it works:</strong><br>
+          Paste your contract below. We review it manually using AI and return a clear
+          risk summary and negotiation suggestions within 24–48 hours.
+        </p>
+
+        <form id="contractForm">
+          <label>Your Email (to send the review):</label>
+          <input type="email" required placeholder="you@email.com">
+
+          <label>Paste your freelance contract text below to see a risk summary.</label>
+          <textarea required placeholder="Paste your contract text here..."></textarea>
+
+          <button type="submit">Submit Your Contract</button>
+        </form>
       </div>
     </div>
 
-    <!-- INFO TEXT -->
+    <!-- INFO -->
     <div class="section">
       <p>
-        Paste your contract above and click Submit for Review.
-        We'll email you the review within 24–48 hours.
+        Paste your contract above and click <strong>Submit for Review</strong>.
+        We’ll email you the review within 24–48 hours.
       </p>
     </div>
 
     <!-- HOW IT WORKS -->
     <div class="section">
-      <h2>How It Works</h2>
-
-      <ol>
-        <li><strong>Paste Your Contract</strong><br>Copy and paste your contract.</li>
-        <li><strong>We Review It</strong><br>AI + human checks.</li>
-        <li><strong>Get Clear Guidance</strong><br>Risk summary in 24–48 hours.</li>
-      </ol>
+      <div class="card">
+        <h2>How It Works</h2>
+        <ol>
+          <li><strong>Paste Your Contract</strong><br>Copy and paste your contract.</li>
+          <li><strong>We Review It</strong><br>AI-assisted, human-checked.</li>
+          <li><strong>Get Clear Guidance</strong><br>Risk summary in 24–48 hours.</li>
+        </ol>
+      </div>
     </div>
 
     <!-- FAQ -->
     <div class="section">
-      <h2>Frequently Asked Questions</h2>
+      <div class="card">
+        <h2>Frequently Asked Questions</h2>
 
-      <p><strong>Is this legal advice?</strong><br>
-      No. This is informational only.</p>
+        <p><strong>Is this legal advice?</strong><br>
+        No. This is informational only.</p>
 
-      <p><strong>How long does the review take?</strong><br>
-      24–48 hours.</p>
+        <p><strong>How long does the review take?</strong><br>
+        24–48 hours.</p>
 
-      <p><strong>Is my contract kept private?</strong><br>
-      Yes.</p>
+        <p><strong>Is my contract kept private?</strong><br>
+        Yes. We do not store contract text.</p>
+
+        <p><strong>What contracts do you review?</strong><br>
+        Freelance, consulting, and independent contractor agreements.</p>
+      </div>
     </div>
+
+    <!-- TRUST -->
+    <div class="section">
+      <div class="card">
+        <h2>Why Freelancers Trust This Service</h2>
+        <ul>
+          <li>👤 Built by a freelancer, for freelancers</li>
+          <li>🤖 AI-assisted, human-reviewed</li>
+          <li>🔍 Plain-English risk explanations</li>
+          <li>📄 No contract storage</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PRICING -->
+    <div class="section">
+      <div class="card">
+        <h2>Pricing</h2>
+        <ul>
+          <li>✅ First contract review – <strong>Free</strong></li>
+          <li>✅ Additional reviews – <strong>₹499 / $9</strong></li>
+          <li>✅ Delivered within 24–48 hours</li>
+        </ul>
+        <p><em>No subscriptions. No hidden fees.</em></p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="section">
+      <div class="card">
+        <h2>Disclaimer</h2>
+        <p>
+          This service provides AI-assisted summaries for informational purposes only.
+          It does not replace a lawyer.
+        </p>
+        <p>
+          Contact: <strong>musaleventures@gmail.com</strong>
+        </p>
+      </div>
+    </footer>
 
   </div>
 
-</body>
-.card {
-  background: white;
-  padding: 28px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-  margin-top: 20px;
-}
-
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <h1>🛡️ Freelancer Contract Guard</h1>
-
-    <div class="card">
-      <h2>Paste Your Contract</h2>
-
-      <p>
-        <strong>How it works:</strong><br>
-        Paste your contract below. We review it manually using AI and return a clear
-        risk summary and negotiation suggestions within 24–48 hours.
-      </p>
-
-      <form id="contractForm">
-        <label>Your Email (to send the review):</label>
-        <input type="email" required placeholder="you@email.com" />
-
-        <label>Paste your freelance contract text below to see a risk summary.</label>
-        <textarea required placeholder="Paste your contract text here..."></textarea>
-
-        <!-- ✅ REAL CLICKABLE BUTTON -->
-        <button type="submit" id="submitBtn">
-          Submit Your Contract
-        </button>
-      </form>
-    </div>
-  </div>
-
-  <!-- ✅ OPTIONAL: Submit handler -->
   <script>
-    document.getElementById("contractForm").addEventListener("submit", function (e) {
+    document.getElementById("contractForm").addEventListener("submit", function(e) {
       e.preventDefault();
       alert("✅ Contract submitted successfully!");
     });
   </script>
-</body>
-</html>
-
-
-
-    <p>
-    Paste your contract above and click <strong>Submit for Review</strong>.
-    We’ll email you the review within 24–48 hours.
-  </p>
-  
-    <div class="card">
-  <h2>How It Works</h2>
-
-  <ol>
-    <li>
-      <strong>Paste Your Contract</strong><br>
-      Copy and paste your freelance contract into the form above.
-    </li>
-    <br>
-
-    <li>
-      <strong>We Review It</strong><br>
-      We manually review your contract using AI and human checks.
-    </li>
-    <br>
-
-    <li>
-      <strong>Get Clear Guidance</strong><br>
-      Receive a risk summary and safer wording within 24–48 hours.
-    </li>
-  </ol>
-</div>
-    
-<div class="card">
-  <h2>Frequently Asked Questions</h2>
-
-  <p><strong>Is this legal advice?</strong><br>
-  No. This service provides AI-assisted summaries for informational purposes only and does not replace a lawyer.</p>
-
-  <p><strong>How long does the review take?</strong><br>
-  Reviews are delivered within 24–48 hours after submission.</p>
-
-  <p><strong>Is my contract kept private?</strong><br>
-  Yes. Contract text is reviewed manually and not stored.</p>
-
-  <p><strong>What types of contracts do you review?</strong><br>
-  Freelance, consulting, independent contractor, and gig contracts.</p>
-
-  <p><strong>How accurate is the review?</strong><br>
-  Reviews are AI-assisted and human-checked to highlight common risks, but should be validated by a lawyer for legal certainty.</p>
-</div>
-<div class="card">
-  <h2>Why Freelancers Trust This Service</h2>
-
-  <ul>
-    <li>👤 Built by a freelancer, for freelancers</li>
-    <li>🤖 AI-assisted, human-reviewed summaries</li>
-    <li>🔍 Focused on practical risks, not legal jargon</li>
-    <li>🧭 Transparent process and clear expectations</li>
-    <li>📄 No data storage or contract retention</li>
-  </ul>
-</div>
-<p><em>
-This is an early-stage product built in public.
-Feedback and suggestions are welcome.
-</em></p>
-
-  <br><br>
-<div class="card">
-  <h2>Pricing</h2>
-
-  <p><strong>Early Access Offer</strong></p>
-
-  <ul>
-    <li>✅ First contract review – <strong>Free</strong></li>
-    <li>✅ Additional reviews – <strong>₹499 / $9 per contract</strong></li>
-    <li>✅ Delivered within 24–48 hours</li>
-  </ul>
-
-  <p><em>No subscription. No hidden fees.</em></p>
-
-  <p>
-    Paste your contract above and click <strong>Submit for Review</strong>.
-    We’ll email you the review within 24–48 hours.
-  </p>
-
-  <p>
-    For questions, contact:
-    <strong>musaleventures@gmail.com</strong>
-  </p>
-</div>
-
-  <button onclick="showReview()" style="
-    padding:12px 20px;
-    font-size:16px;
-    background:#1f3a5f;
-    color:white;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;">
-   Submit for Review
-  </button>
-    <p><strong>You will receive:</strong></p>
-<ul>
-  <li>Risk levels (Low / Medium / High)</li>
-  <li>Plain-English explanation</li>
-  <li>Suggested safer wording</li>
-</ul>
-</div>
-
-  <p><strong>AI-assisted contract review for freelancers</strong></p>
-
-  <div class="card">
-    <h2>Contract Overview</h2>
-    <p>This review highlights payment, IP, termination, liability, and non-compete clauses, explains risks in simple language, and suggests safer alternatives.  
-    <br><strong>This is not legal advice.</strong></p>
-  </div>
-
-</div>
-
-  <footer>
-    <div class="card">
-  <h2>Disclaimer</h2>
-
-  <p>
-    This service provides AI-assisted contract summaries for informational purposes only.
-    It does not constitute legal advice.
-  </p>
-
-  <p>
-    Contract Guard is not a law firm, and no attorney-client relationship is formed.
-    For legal advice, please consult a qualified lawyer.
-  </p>
-</div>
-<div class="card">
-  <h2>Trust & Transparency</h2>
-
-  <ul>
-    <li>✅ Reviews are performed manually using AI tools</li>
-    <li>✅ Human-checked before delivery</li>
-    <li>✅ Your contract text is not stored</li>
-    <li>✅ Clear risk levels and plain-English explanations</li>
-  </ul>
-</div>
-<div class="card" style="text-align:center;">
-  <h2>Ready to Review Your Contract?</h2>
-
-  <p>
-    Avoid hidden risks and unclear terms before you sign.
-    Get a clear, freelancer-friendly contract review.
-  </p>
-
-  <p><strong>First review is free.</strong></p>
-
-  <p>
-    Paste your contract above and click
-    <strong>Submit for Review</strong>.
-  </p>
-
-  <p>
-    Questions? Email us at
-    <strong>your-email@example.com</strong>
-  </p>
-</div>
-
-  </footer>
-
-</div>
-<script>
-  function showReview() {
-    document.getElementById("result").style.display = "block";
-    window.scrollTo({ top: document.getElementById("result").offsetTop, behavior: "smooth" });
-  }
-</script>
 
 </body>
 </html>
